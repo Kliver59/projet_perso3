@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 
 const taskRouter = express.Router();
 
@@ -7,4 +7,4 @@ taskRouter.get("/", (req, res) => {
   res.json({ message: "Liste des tâches" });
 });
 
-export default taskRouter;
+module.exports = taskRouter; // Exporter avec `module.exports` en CommonJS

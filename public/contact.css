@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url("/images/sea_of_thieves.jpg");
+  background-image: url(./images/sea_of_thieves.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -119,11 +119,13 @@ button.submit-button:hover {
   transform: translateX(-50%) translateY(-150%);
   width: 50px;
   height: 50px;
-  background-image: url("/images/2281334.svg");
+  background-image: url("./images/2281334.svg");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   z-index: 0;
 }
 
