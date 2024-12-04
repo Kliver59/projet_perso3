@@ -8,7 +8,7 @@
 .Nav-Bar {
   position: absolute;
   top: 0;
-  left: 50%; /* Positionner au milieu horizontalement */
+  left: 50%; /* Centrer horizontalement */
   transform: translateX(-50%); /* Centrer la navbar */
   background-color: transparent;
   width: fit-content; /* Ajuster la largeur en fonction du contenu */
@@ -48,11 +48,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh; /* S'assurer que le body occupe toute la hauteur de la fenêtre */
-  background-image: url("/images/five_night_at_freddy's.jpg"); /* Remplacer par le chemin de ton image */
-  background-size: cover; /* L'image couvre toute la page sans déformation */
-  background-position: center; /* L'image est centrée */
-  background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  background-attachment: fixed; /* Optionnel : pour que l'image reste fixe lors du défilement */
+  background-image: url("/images/five_night_at_freddy's.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
@@ -68,17 +68,19 @@ body {
   transform: translateX(-50%) translateY(-150%);
   width: 50px;
   height: 50px;
-  background-image: url("/images/2281334.svg"); /* Remplace par ton image d'épée */
+  background-image: url("/images/2281334.svg");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  z-index: 0; /* L'épée est en dessous du texte */
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  z-index: 0;
 }
 
 .container:hover .sword {
   opacity: 1;
-  transform: translateX(-50%) translateY(-250%) rotate(45deg); /* Animation épée monte et tourne */
+  transform: translateX(-50%) translateY(-250%) rotate(45deg);
 }
 
 a {
@@ -88,9 +90,9 @@ a {
 
 .center-left-video {
   position: absolute;
-  top: 50%; /* Centrage vertical */
-  left: 0; /* Aligner à gauche */
-  transform: translateY(-50%); /* Ajuster pour centrer précisément */
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   border-radius: 2em;
 }
 
@@ -100,13 +102,13 @@ h3 {
 
 .video-title {
   position: absolute;
-  top: 27%; /* Juste au-dessus de la vidéo */
+  top: 27%;
   left: 0;
   transform: translateY(-100%);
   color: black;
   font-size: 1em;
   font-weight: bold;
-  padding: 10px; /* Fond semi-transparent pour meilleure lisibilité */
+  padding: 10px;
   text-align: left;
-  width: 640px; /* Même largeur que la vidéo */
+  width: 640px;
 }
